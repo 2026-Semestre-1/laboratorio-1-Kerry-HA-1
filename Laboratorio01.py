@@ -64,18 +64,18 @@ def contadorDigitos(num, digito):
     return contadorDigitos_Aux(num, digito)
 
 def contadorDigitos_Aux(num, digito):
-     contador = 0
+    contador = 0
     if (digito == 0):
         while contador < 3:
             contador +=1
 
-    return contador
+return contador
 
-    if (digito == 3):
-        while contador < 4:
-            contador += 1
+if (digito == 3):
+    while contador < 4:
+        contador += 1
 
-        return contador
+return contador
 
 
 
@@ -85,4 +85,5 @@ def contadorDigitos_Aux(num, digito):
 
   
     
+
 
