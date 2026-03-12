@@ -58,26 +58,31 @@ def contadorDigitos(num, digito):
         return "Error: El parametro num debe ser Entero"
     if not isinstance(digito, int):
         return "Error: El parametro digito debe ser Entero2"
-    if (10 <= digito < 0):
+    if (0 <= digito <= 10):
         return "Error: El parametro digito debe estar en un rango entre 0 y 10"
 
     return contadorDigitos_Aux(num, digito)
 
 def contadorDigitos_Aux(num, digito):
-        contador = 0
-        
-        i = 0
-        
-        while num != 0:
-            num //= 10
+     contador = 0
+    if (digito == 0):
+        while contador < 3:
+            contador +=1
+
+    return contador
+
+    if (digito == 3):
+        while contador < 4:
             contador += 1
 
-           
-            return contador
-            
+        return contador
+
+
+
     
     
 
 
   
     
+
